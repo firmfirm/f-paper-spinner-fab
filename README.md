@@ -11,7 +11,7 @@ and [`<paper-fab>`](https://elements.polymer-project.org/elements/paper-fab).
 ## Installation
 ```bash
 # Assuming Node.js and Bower are already installed
-bower install --save zamok-auth
+bower install --save f-paper-spinner-fab
 ```
 
 ## Usage
