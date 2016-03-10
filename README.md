@@ -1,20 +1,31 @@
-# f-paper-spinner-fab
+# f-paper-spinner-fab [![Build Status](https://travis-ci.org/firmfirm/f-paper-spinner-fab.svg?branch=master)](https://travis-ci.org/firmfirm/f-paper-spinner-fab)
 
 Combines [`<paper-spinner-lite>`](https://elements.polymer-project.org/elements/paper-spinner?active=paper-spinner-lite)
 and [`<paper-fab>`](https://elements.polymer-project.org/elements/paper-fab).
 
-  - Learn about element properties, methods and events in [component page](https://firmfirm.github.io/f-paper-spinner-fab/).
+  - Learn about element properties in [component page](https://firmfirm.github.io/f-paper-spinner-fab/).
   - Try out [live demo](https://firmfirm.github.io/f-paper-spinner-fab/components/f-paper-spinner-fab/demo/).
 
-Example:
+![Example](http://i.imgur.com/gYRK9wo.png)
+
+## Installation
+```bash
+# Assuming Node.js and Bower are already installed
+bower install --save zamok-auth
+```
+
+## Usage
+
+Import element and (if needed) iconset
 ```html
 <link rel="import" href="bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="bower_components/f-paper-spinner-fab/f-paper-spinner-fab.html">
-
-<f-paper-spinner-fab icon="cancel" active></f-paper-spinner-fab>
 ```
 
-![Example](http://i.imgur.com/gYRK9wo.png)
+Use it
+```html
+<f-paper-spinner-fab icon="cancel" active></f-paper-spinner-fab>
+```
 
 # Development
 
@@ -46,33 +57,3 @@ And you can run it via:
 
 Once running, you can preview your element at
 `http://localhost:8080/components/f-paper-spinner-fab/`, where `f-paper-spinner-fab` is the name of the directory containing it.
-
-
-## Testing Your Element
-
-Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/f-paper-spinner-fab/test/`
-
-### web-component-tester
-
-The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
-Install it via:
-
-    npm install -g web-component-tester
-
-Then, you can run your tests on _all_ of your local browsers via:
-
-    wct
-
-#### WCT Tips
-
-`wct -l chrome` will only run tests in chrome.
-
-`wct -p` will keep the browsers alive after test runs (refresh to re-run).
-
-`wct test/some-file.html` will test only the files you specify.
-
-
-## Yeoman support
-
-If you'd like to use Yeoman to scaffold your element that's possible. The official [`generator-polymer`](https://github.com/yeoman/generator-polymer) generator has a [`seed`](https://github.com/yeoman/generator-polymer#seed) subgenerator.
