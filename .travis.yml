@@ -2,20 +2,12 @@ language: node_js
 sudo: false
 branches:
   except:
-  - gh-pages
-before_script:
-- npm install -g bower polylint
-- bower install
+    - gh-pages
+before_script: npm install -g polylint
 env:
   global:
-  - GH_REF: github.com/firmfirm/f-paper-spinner-fab.git
-  - secure: PGWupCSvw5HkNcsJMt1alfp7UdyN63T3HsAbkCPdU5tLiVOrqfg8ldLpvN6ejq3hkrACEv87EMdUQj9SU5LVI8SttcMmR1ZvtSBrFhmllMDymHzAr0hTonRHmevzKzfmWHtdVudcxKwCgtSFcc2am8qqdkmFif1+66TjbM+bX5h2L/UFyRaUwZzzH8/8yMBKMCEzr8AYRE6vg03240xr555qqOYamt7n3sbWYDIRWU41vJT+OgLJBSKyIIdDWeyIuYHA6YxDzupPfwbRY+OSs+dI78j/eGBRffpIYJE5YOgQROX7GtUKNLI8/8lAfz6NqoZgHUoMVAkgHrIZxNURkF0c5LTF0TeJefpIcjsm/ArOUIDMxkID8YNoKGG6uFeJ4Qdh996XhblRHxtTfBf/ZDCfo5d9Y+GMZ6BmYwn6Mqx3SnHLiAErevW1G7lVPy7XusNppZdogEmHgAHlLo1v+8XikUCPXy5VEUEtZemtPrdn+k43x4ru/WPOfvX9siQG1qxCYN2u58iQIflLl6azjNJdEzskAmf/1i37A+7iriZU9Z0g/QgXEIMEqvUKe9hZmCh+KNZBfbl+WSKlJEBTTaw2+ccZ8knu38AmCYydKeHhmtwaALHFWEpbd0FylOriIy7dEpUJ1kulvsO+Mdi7DZIIrjYGN7PYzUQQQm+TMLc=
+    - GH_REF: github.com/firmfirm/f-paper-spinner-fab.git
+    - secure: PGWupCSvw5HkNcsJMt1alfp7UdyN63T3HsAbkCPdU5tLiVOrqfg8ldLpvN6ejq3hkrACEv87EMdUQj9SU5LVI8SttcMmR1ZvtSBrFhmllMDymHzAr0hTonRHmevzKzfmWHtdVudcxKwCgtSFcc2am8qqdkmFif1+66TjbM+bX5h2L/UFyRaUwZzzH8/8yMBKMCEzr8AYRE6vg03240xr555qqOYamt7n3sbWYDIRWU41vJT+OgLJBSKyIIdDWeyIuYHA6YxDzupPfwbRY+OSs+dI78j/eGBRffpIYJE5YOgQROX7GtUKNLI8/8lAfz6NqoZgHUoMVAkgHrIZxNURkF0c5LTF0TeJefpIcjsm/ArOUIDMxkID8YNoKGG6uFeJ4Qdh996XhblRHxtTfBf/ZDCfo5d9Y+GMZ6BmYwn6Mqx3SnHLiAErevW1G7lVPy7XusNppZdogEmHgAHlLo1v+8XikUCPXy5VEUEtZemtPrdn+k43x4ru/WPOfvX9siQG1qxCYN2u58iQIflLl6azjNJdEzskAmf/1i37A+7iriZU9Z0g/QgXEIMEqvUKe9hZmCh+KNZBfbl+WSKlJEBTTaw2+ccZ8knu38AmCYydKeHhmtwaALHFWEpbd0FylOriIy7dEpUJ1kulvsO+Mdi7DZIIrjYGN7PYzUQQQm+TMLc=
 node_js: stable
-script:
-- polylint
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: bash ./deploy.sh
-  on:
-    branch: master
+script: polylint
+
